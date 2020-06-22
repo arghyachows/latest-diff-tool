@@ -1,0 +1,20 @@
+<div class="row">
+
+    <div class="col-md-2">
+        <nav class="nav nav-pills p-4" style="cursor:pointer">
+            <a class="nav-link" [ngClass]="{'active':activeMenu===4}"
+                (click)='activeMenu=4;onChangedTextUpdated(f4,f3)'>xml-file-v-4</a>
+            <a class="nav-link" [ngClass]="{'active':activeMenu===3}"
+                (click)='activeMenu=3;onChangedTextUpdated(f3,f2)'>xml-file-v-3</a>
+            <a class="nav-link" [ngClass]="{'active':activeMenu===2}"
+                (click)='activeMenu=2;onChangedTextUpdated(f2,f1)'>xml-file-v-2</a>
+            <a class="nav-link" [ngClass]="{'active':activeMenu===1}"
+                (click)='activeMenu=1;onChangedTextUpdated(f1,f1)'>xml-file-v-1</a>
+        </nav>
+    </div>
+
+    <div class="col-md-10 p-4">
+        <td-ngx-text-diff [left]="left" [right]="right" [diffContent]="contentObservable$"></td-ngx-text-diff>
+    </div>
+
+</div>

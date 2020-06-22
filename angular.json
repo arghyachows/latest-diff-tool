@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "latest-diff-tool"
+    }
+  },
+  "defaultProject": "latest-diff-tool",
+  "cli": {
+    "analytics": false
+  }
 }
